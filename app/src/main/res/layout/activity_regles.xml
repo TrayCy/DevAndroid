@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Règles du jeu"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"></TextView>
+
+    <TextView
+        android:id="@+id/textTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=" But : avoir 13 pts en premier
+ Pendant son tour le joueur doit piocher 3 dés parmi les 13 disponibles et les lance.
+ Résultats possibles :
+        - Pates : +1 pt de coté et enlève le dé
+        - Fourchette : +1 blessure et enlève le dé
+        - Casserole : garde le dé si il relance
+ Issues :
+    - si le joueur a trois blessures i larrete son tour et ne gagne pas ses pts mis de coté
+    - le joueur arrete son tour ou n'a plus de dé et gagne ses pts
+    - le joueur décide de lancer à nouveau"
+        android:textSize="17sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></TextView>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="Lancer la partie"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></Button>
+
+</RelativeLayout>
